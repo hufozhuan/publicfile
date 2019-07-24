@@ -1,0 +1,148 @@
+﻿windows->preferences->java->Code Templates->comments->Type->edit 
+Eclipse注释规范模版总结
+新建类文件
+/**
+* @ClassName:     ${file_name}
+* @Description:   ${todo}(用一句话描述该文件做什么) 
+* 
+* @author         ${user}
+* @version        V1.0  
+* @Date           ${date} ${time} 
+*/
+方法
+/** 
+* @Title:        ${enclosing_method} 
+* @Description:  ${todo}(这里用一句话描述这个方法的作用) 
+* @param:        ${tags}    
+* @return:       ${return_type}    
+* @throws 
+* @author        ${user}
+* @Date          ${date} ${time} 
+*/
+
+输入设置模板： 
+
+/**      
+* ${file_name} Create on ${date}     
+*      
+* Copyright (c) ${date} by taotaosoft      
+*      
+* @author <a href="xiuzhong.li@gmail.com">Jerryli</a>     
+* @version 1.0 
+*     
+*/ 
+
+注意选择自动添加注释 
+
+养成一个规范的习惯是最好的。 
+
+
+选菜单 
+windows-->preference 
+Java-->Code Style-->Code Templates 
+code-->new Java files 
+
+选中点编辑 
+
+${filecomment} 
+${package_declaration} 
+/** 
+* @author 作者姓名  E-mail: email地址 
+* @version 创建时间：${date} ${time} 
+* 类说明 
+*/ 
+${typecomment} 
+${type_declaration} 
+
+
+Eclipse注释规范模版总结
+1、  具体操作
+（1）在eclipse中，打开Window->Preference->Java->Code Style->Code Template
+（2）然后展开Comments节点就是所有需设置注释的元素，参照2注释规范对应设置即可
+2、  注释规范
+（1）文件(Files)注释标签
+/**
+* FileName:     ${file_name}
+* @Description: ${todo}(用一句话描述该文件做什么)
+* All rights Reserved, Designed By ZTE-ITS
+* Copyright:    Copyright(C) 2010-2011
+* Company       ZTE-ITS WuXi LTD.
+* @author:    名字
+* @version    V1.0 
+* Createdate:         ${date} ${time}
+*
+* Modification  History:
+* Date         Author        Version        Discription
+*
+* ${date}       wu.zh          1.0             1.0
+* Why & What is modified: <修改原因描述>
+*/
+
+（2）类型(Types)注释标签（类的注释）：
+
+/**
+* @ClassName:     ${type_name}
+* @Description:${todo}(这里用一句话描述这个类的作用)
+* @author:    Android_Robot
+* @date:        ${date} ${time}
+*
+* ${tags}
+*/
+
+（3）字段(Fields)注释标签：
+
+/**  
+* @Fields ${field} : ${todo}(用一句话描述这个变量表示什么)   
+*/  
+
+
+（4）构造函数标签：
+
+/**
+* @Title:        ${enclosing_type}
+* @Description:    ${todo}(这里用一句话描述这个方法的作用)
+* @param:    ${tags}
+* @throws
+*/
+
+（5）方法(Methods)标签：
+
+/**
+* @Title: ${enclosing_method}
+* @Description: ${todo}(这里用一句话描述这个方法的作用)
+* @param: ${tags}   
+* @return: ${return_type}   
+* @throws
+*/
+
+（6）覆盖方法(Overriding Methods)标签:
+
+/**
+* <p>Title: ${enclosing_method}</p>
+* <p>Description: </p>
+* ${tags}
+* ${see_to_overridden}
+*/
+
+（7）代表方法(Delegate Methods)标签：
+
+/**
+* ${tags}
+* ${see_to_target}
+*/
+
+（8）getter方法标签：
+
+/**
+* @Title:        ${enclosing_method} <BR>
+* @Description: please write your description <BR>
+* @return:     ${field_type} <BR>
+*/
+
+（9）setter方法标签：
+
+/** 
+* @Title:  ${enclosing_method} <BR> 
+* @Description: please write your description <BR> 
+* @return: ${field_type} <BR> 
+*/
